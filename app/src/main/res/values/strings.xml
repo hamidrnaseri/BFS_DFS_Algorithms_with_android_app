@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">artificial_intelligence_DFS_BFS</string>
+    <string name="attach">attach...</string>
+    <string name="dfs">DFS :</string>
+    <string name="search">Search</string>
+    <string name="first_node">First Node</string>
+    <string name="end_node">End Node</string>
 </resources>

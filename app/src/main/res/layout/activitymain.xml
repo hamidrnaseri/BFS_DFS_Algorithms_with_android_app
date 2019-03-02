@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_code_black_24dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/asdlsadjowqeipwmdasdadwqe"/>
+
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_below="@+id/asdlsadjowqeipwmdasdadwqe"
+                android:id="@+id/lyugukygersdrges"
+                android:layout_centerHorizontal="true">
+
+            <io.ghyeok.stickyswitch.widget.StickySwitch
+                    android:id="@+id/StickySwitch_bfs_dfs_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:ss_animationDuration="600"
+                    app:ss_animationType="line"
+                    app:ss_iconPadding="6dp"
+                    app:ss_iconSize="20dp"
+                    app:ss_leftIcon="@drawable/ic_file_upload_black_24dp"
+                    app:ss_leftText="BFS"
+                    app:ss_rightIcon="@drawable/ic_receive_black_24dp"
+                    app:ss_rightText="DFS"
+                    app:ss_selectedTextSize="5sp"
+                    app:ss_sliderBackgroundColor="#F4D03F"
+                    app:ss_switchColor="#ffffff"
+                    app:ss_textColor="#991d1d1d"
+                    app:ss_textSize="5sp"
+                    app:ss_textVisibility="visible"/>
+
+        </RelativeLayout>
+
+            <Button android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/attach"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/button_style_1"
+                    android:layout_below="@+id/lyugukygersdrges"
+                    android:id="@+id/button_activity_main_attach"
+            />
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/button_activity_main_attach"
+                    android:id="@+id/iuldshfdsiufbhasdbgaskudbgsahdgwuakydg"
+            >
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <EditText
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:layout_width="30dp"
+                            android:hint="@string/first_node"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:id="@+id/EditText_first_node"
+                    />
+
+                    <View
+                            android:layout_width="4dp"
+                            android:layout_height="match_parent"
+                    />
+                    <EditText
+                            android:layout_height="match_parent"
+                            android:layout_width="30dp"
+                            android:layout_weight="50"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:hint="@string/end_node"
+                            android:id="@+id/EditText_end_node"
+                    />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+            <Button android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_style_2"
+                    android:layout_below="@+id/iuldshfdsiufbhasdbgaskudbgsahdgwuakydg"
+                    android:id="@+id/button_activity_main_click"/>
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/all_details_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_below="@+id/button_activity_main_click"
+                    android:background="#9999"
+                    android:layoutDirection="rtl"
+                    android:visibility="gone"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="6dp">
+
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                            android:id="@+id/asdsadasdsaldkjslakfajkdloiwajd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <androidx.core.widget.NestedScrollView
+                                android:id="@+id/layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dip">
+
+                            <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                <HorizontalScrollView
+                                        android:id="@+id/horizontalViasdasdasdew"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:scrollbars="horizontal|vertical">
+
+                                    <TableLayout
+                                            android:id="@+id/details_table_layoutt"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:divider="?android:attr/dividerHorizontal"
+                                            android:showDividers="middle"
+                                            android:stretchColumns="*" />
+                                </HorizontalScrollView>
+
+
+                            </RelativeLayout>
+
+
+                        </androidx.core.widget.NestedScrollView>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
