@@ -28,6 +28,8 @@ import java.util.Objects;
 
 public class Main2Activity extends AppCompatActivity {
 
+//    kh garepasha
+
     private Button button_attach;
     private File file;
     private String[][] dataset = new String[28980][2];
@@ -134,9 +136,7 @@ public class Main2Activity extends AppCompatActivity {
             result_bfs = bfs_class.main(dataset_);
             for (int i = 0; i < result_bfs.length; i++) {
                 if (result_bfs[i] != 0) {
-
                     get_data_for_set_table(String.valueOf(result_bfs[i]));
-                    Log.i("nn", String.valueOf(result_bfs[i]));
                 }
             }
         }else if (string_switch_bfs_dfs.equals("DFS")){
